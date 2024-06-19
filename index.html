@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Data Fetcher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4">URL Data Fetch</h2>
+            <form id="urlForm">
+                <div class="form-group">
+                    <label for="urlInput">Enter URL:</label>
+                    <input type="text" class="form-control" id="urlInput" placeholder="https://example.com">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Fetch Data</button>
+            </form>
+        </div>
+        <div class="text-primary text-center mt-3 d-none" id="loadingSpinner">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="dataContainer" class="mt-3" style="display:none">
+            <!-- Fetched data will appear here -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
